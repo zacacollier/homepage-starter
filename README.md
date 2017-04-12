@@ -1,4 +1,4 @@
-# Webpack 2 + React + HTTPS
+# Homepage Starter
 - Webpack 2
 - `webpack-dev-server` + Hot Module Replacement
 - Minimal React boilerplate
