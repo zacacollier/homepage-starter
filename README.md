@@ -28,7 +28,7 @@ curl -o- -L https://yarnpkg.com/install.sh | bash
 
 Or just use `npm`.
 
-### `src` structure
+### `src` structure:
 ```bash
   src
   ├── components
@@ -40,9 +40,11 @@ Or just use `npm`.
 ```
 #### N.B.
 - CSS naming and location corresponds to Component name (for now)
-- Static assets can be inlined in React elements:
+- Static assets (other than `index.html`) can be inlined in React elements:
 ```jsx
 const stallman = require('../static/stallman.jpg')
+
+// src/components/App.js
 
 const App = () => (
   <div className={styles.app}>
