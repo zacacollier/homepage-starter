@@ -54,7 +54,6 @@ module.exports = {
       },
       {
         test: /\.(jpg|png|gif|svg)$/i,
-        include: resolve(__dirname, 'src'),
         use: [
           {
             loader: 'file-loader?hash=sha512&digest=hex',

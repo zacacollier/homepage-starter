@@ -6,15 +6,13 @@
 - PostCSS
 - Asset optimization (WIP sorta)
 
-### Installation & Usage
+### Installation
 ```
-  git clone git@github.com:zacacollier/webpack2-react-https-start.git myNewProject
-  cd myNewProject
+  git clone git@github.com:zacacollier/homepage-starter.git
+  cd homepage-starter
   yarn install
   yarn start
 ```
-
-### Options
 
 #### With `yarn`:
 You can quickly install yarn with
@@ -22,11 +20,12 @@ You can quickly install yarn with
 curl -o- -L https://yarnpkg.com/install.sh | bash
 ```
 
+### Options
+
 - `yarn start`  ~ serve over HTTP
   - `yarn dev`    ~ same, but with more verbose output
 - `yarn secure` ~ serve over HTTPS
 
-Or just use `npm`.
 
 ### `src` structure:
 ```bash
@@ -40,7 +39,7 @@ Or just use `npm`.
 ```
 #### N.B.
 - CSS naming and location corresponds to Component name (for now)
-- Static assets (other than `index.html`) can be inlined in React elements:
+- Static assets (other than `index.html`) can be inlined in React elements from `src`:
 ```jsx
 const stallman = require('../static/stallman.jpg')
 
@@ -54,3 +53,4 @@ const App = () => (
 );
 ```
 
+...or gathered from `public` at the project root.
